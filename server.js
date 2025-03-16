@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import appRoutes from './routes/appRoutes.js';
 import cors from "cors"
-import connectCloudinary from './config/cloudinaryConfig.js';
+import connectCloudinary from './config/CloudinaryConfig.js';
 // Load environment variables
 dotenv.config();
 const app = express();
