@@ -1,5 +1,5 @@
 import AppModel from '../models/appModel.js';
-import cloudinary from 'cloudinary';
+import {v2 as cloudinary} from 'cloudinary';
 
 export const createAppEntry = async (req, res) => {
     try {
