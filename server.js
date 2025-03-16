@@ -3,11 +3,13 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import appRoutes from './routes/appRoutes.js';
 import cors from "cors"
+import connectCloudinary from './config/cloudinaryConfig.js';
 // Load environment variables
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(cors())
+connectCloudinary()
 
 // Middleware
 app.use(express.json()); // Parse JSON bodies
